@@ -1,2 +1,2 @@
 # UsabilityHub
-This is user only for learning purpose.
+This is used only for learning purpose.
