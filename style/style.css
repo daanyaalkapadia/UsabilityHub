@@ -261,4 +261,12 @@ footer{
 .sub-footer-container{
     justify-content: center;
     gap: 30px;
+    position: relative;
+}
+.sub-footer-container p{
+    color: white;
+}
+.sub-footer-container .hover-link:last-child{
+    position: absolute;
+    right: 0px;
 }
