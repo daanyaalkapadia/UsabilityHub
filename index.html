@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
 </head>
 <body>
     <!-- top-banner -->
@@ -21,7 +22,7 @@
             <a class="company-logo" href="#">
                 <img src="/images/asset 1.png" alt="Company Logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customer</a></li>
@@ -30,6 +31,9 @@
                     <li><a href="#" class="hover-link secondary-button">Sign In</a></li>
                     <li><a href="#" class="hover-link primary-button">Sign Up</a></li>
                 </ul>
+            </div>
+            <div class="nav-toggles hover-link" id="nav-toggles">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </nav>
@@ -130,7 +134,7 @@
     </section>
 
     <section class="big-feature-section">
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container" id="big-feature-container-reverse">
             <div class="feature-desc flex">
                 <h4>Optimisation for</h4>
                 <h3>Marketers</h3>
@@ -224,7 +228,7 @@
             </div>
         </div>
     </footer>
-
+    <!-- sub footer -->
     <div class="sub-footer">
         <div class="container flex sub-footer-container">
             <a href="#" class="hover-link">Privacy Policy</a>
@@ -236,5 +240,13 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/b80519e9c3.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById('nav-toggles');
+        const navLinks = document.getElementById('nav-links');
+        
+        toggleButton.addEventListener('click', () =>{
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
